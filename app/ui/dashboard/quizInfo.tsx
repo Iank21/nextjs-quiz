@@ -9,7 +9,7 @@ export default function QuizInfo({test, testData}: any) {
   return (
     <div>
     {quizStarted ? (
-      <QuizRun testData={testData}/>
+      <QuizRun testData={testData} testId={test.id}/>
     ) : (
       <>
     	<div className={`mb-6 text-center`}>

@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 .btn {
-  @apply w-fit flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base
+  @apply cursor-pointer	w-fit flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base
+}
+
+.btn.active {
+  @apply bg-green-500
+}
+
+.btn:disabled {
+  @apply bg-transparent text-black border-blue-500 border-2 cursor-not-allowed	
+}
+
+.d-line {
+  @apply h-6 w-full	border border-solid border-slate-400
 }

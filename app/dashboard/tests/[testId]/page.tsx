@@ -2,7 +2,6 @@
 // import { tests, questions, answers } from '@/app/lib/mock-up';
 import { Question, Question_Answer } from '@/app/lib/definitions';
 import { getAnswers, getQuestionsForOneTest, getTestInfo } from '@/app/lib/data';
-import Quiz from '@/app/ui/dashboard/quizInfo';
 import QuizInfo from '@/app/ui/dashboard/quizInfo';
 
 type TestPageProps = {
@@ -36,6 +35,8 @@ export default async function Page({ params }: TestPageProps) {
   }
 
   return (
-    <QuizInfo test={test} testData={fullTest}/>
+    <>
+        <QuizInfo test={test} testData={fullTest}/>
+    </>
   );
 }
